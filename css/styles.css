@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/Flappy shrimp.png");
+    background-color: #117864;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button img {
+    margin-top: 40px;
+    width: 450px;
+    height: auto;
+    display: block;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } 
+    100% { transform: scale(1); } 
+}
+
+.button img:hover {
+    transform: scale(1.15); 
+}

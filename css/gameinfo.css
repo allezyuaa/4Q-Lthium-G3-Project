@@ -1,0 +1,112 @@
+body {
+    background-image: url("../images/infopage.png");
+    background-color: #117864;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.info-text {
+    font-family: "Courier New", Courier, monospace;
+    color: #04161e;
+    font-size: 16px;
+    font-weight: 700;
+    width: 80%;
+    margin: 220px auto 0;
+    line-height: 1.5;
+}
+
+.user {
+    font-family: "Courier New", Courier, monospace;
+    color: #021118;
+    font-size: 20px;
+    font-weight: 700;
+    width: 80%;
+    margin: 20px auto 0;
+    line-height: 1.5;
+}
+
+input {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+button {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#greeting {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ec8ba7;
+    font-size: 23px;
+    font-weight: 800;
+    padding: 5px 10px;
+    margin-top: 23px;
+    background-color: #FFFFCC;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fall 3s linear forwards;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.easybutton img,
+.hardbutton img {
+    width: 400px;
+    height: auto;
+    animation: pulse 1.5s infinite ease-in-out;
+    display: block;
+    margin: 20px auto;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.store {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.storebutton img {
+    width: 170px;  
+    height: auto;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.storebutton img:hover {
+    transform: scale(1.05);
+}
