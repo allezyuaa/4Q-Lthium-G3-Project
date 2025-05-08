@@ -26,7 +26,7 @@ function getCookie(name) {
     document.querySelector('.High_score_val').innerHTML = highScore;
   }
 
-  let move_speed = 3, gravity = 0.5;
+  let move_speed = 7, gravity = 0.5;
   let shrimp = document.querySelector('.shrimp');
   let img = document.getElementById('shrimp-1');
   let shrimp_props = shrimp.getBoundingClientRect();
